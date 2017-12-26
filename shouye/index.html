@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, user-scalable=0">
+    <title>OFweek技术研讨会 - 关注高科技行业动态</title>
+    <meta name="description" content="OFweek技术研讨会为高科技行业所熟知，借助OFweek强大的行业资源优势，在LED半导体照明、太阳能光伏、光通讯、激光、光学、光电显示、电子工程、工控、智能电网、仪器仪表、节能、环保、风电、电源、新材料、电力、通信、物联网等众多高科技领域，依托专业的会议团队，联合政府机构和国际组织，各行业协会学会、展览和媒体，举办高科技各行业高端年会、论坛、年度颁奖、招商融资会、供需见面会和人才招聘会、企业路演等各种形式的线下会议。">
+    <meta name="keyword" content="高科技研讨会,技术研讨会,高科技行业动态">
+    <meta name="applicable-device" content="mobile" />
+    <link href="http://m.ofweek.com/css/seminar/main.css" rel="stylesheet">
+    <link rel="canonical" href="http://seminar.ofweek.com/" />
+    <link rel="stylesheet" href="./wap/css/reset.css">
+    <script src="./resize.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="headerbox">
+                <div class="headerWrap">
+                    <header class="header_load">
+                        <img class="fl" src="./img/Group4.png" alt="">
+                        <div class="fl">
+                            <h2>下载OFweek客户端</h2>
+                            <p>更好的直播体验</p>
+                        </div>
+                        <span class="fr" id="deletehead">
+                            <img src="./img/closeBtn.png" alt="">
+                        </span>
+                        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.mobile.ofweek" class="fr">下载APP</a>
+                    </header>
+                    <header class="header">
+
+                        <a href="http://expo.ofweek.com/wap/index.xhtml" class="fl ">
+                            <img src="./img/home.png" alt="">
+                        </a>
+                        <h3>
+                            <img src="./img/header_logo.png">行业会议
+                        </h3>
+
+                        <a class="fr" id="wapLogin" onclick="showLoginDialog()" href="javascript:">
+                            <img src="./img/circle.png" alt="">
+                        </a>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://m.ofweek.com/js/seminar/zepto.min.js"></script>
+    <script type="text/javascript" src="http://m.ofweek.com/js/seminar/iscroll-probe.js"></script>
+    <script>
+        window.onload = function () {
+            var deletehead = document.querySelector("#deletehead")
+            deletehead.onclick = function () {
+                this.parentNode.style.display = 'none';
+                headHeight();
+            }
+
+            function headHeight() {
+                var box = document.querySelector(".headerbox");
+                var header = document.querySelector(".headerWrap");
+                box.style.width = header.offsetWidth + "px";
+                box.style.height = header.clientHeight + "px";
+            }
+            headHeight();
+        }
+    </script>
+</body>
+
+</html>
